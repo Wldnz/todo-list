@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    transition: all 200ms linear;
+}
+
+/* header{
+    
+} */
+
+
+.title{
+    padding-top: 1%;
+    text-align: center;
+    /* background: red; */
+}
+
+
+
+main .explain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+main .explain p{
+    max-width: 400px;
+    font-size: 20px;
+}
+
+nav{
+    background: rgb(44, 19, 19);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding: 1rem;
+    width: 100%;
+
+
+     /* position */
+    position: fixed;
+    bottom: 0;
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    /* border-top-left-radius: 200px; */
+}
+nav div img{
+    background: white;
+    border-radius: 20px;
+    padding: 0.8rem;
+}
+
+nav div span{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+nav .list:hover, nav .home:hover,nav .setting:hover{
+  opacity: 0.7;
+   bottom: 5px;
+}
+
+/* nav div span:hover{
+    background-color: white;
+    border: none;
+    border-radius: 8px;y5u575oj7-6[7[y-08utrob.ouu[;hx
+    padding: 0.3rem;
+} */
+
+nav div img:active{
+    box-shadow: 1px 1px 5px white;
+}
+
+nav .hidden:hover{
+  opacity: 0.7;
+  /* bottom: 5px; */
+}
+
+nav .hidden{
+    position: fixed;
+    bottom: 150px;
+    /* right: 200px; */
+}
+
+nav .hidden img{
+    border:2px solid black;
+}
+
+
+
+/* @media all and (min-width : 1000px){
+    nav{
+        width: 50%;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px;
+        transform: translateX(50%);
+    }
+    
+} */

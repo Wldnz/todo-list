@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do ✅ -List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="list.css">
+    <!-- Packae Dexie JS -->
+    <script src="https://unpkg.com/dexie/dist/dexie.js"></script>
+</head>
+
+<body>
+    
+    <div class="header">
+        <h2>Create Your Own To Do List ✅</h2>
+    </div>
+
+
+    <form action="">
+        <div class="navToDo">
+            <img src="./image/stack.png" alt="" height="30px">
+            <input type="text"> 
+            <img src="./image/search.png" alt="search" height="25px">
+            <img src="./image/menu3.png" alt="search" height="20px">
+        </div>
+        <br>
+        <h1>TO DO LIST</h1>
+        <!-- <br> -->
+        <br>
+        <div class="listToDo" id="listToDo">
+        </div>
+    </form>
+
+      <!-- navigation list -> home -> setting -->
+      <nav id="navigation">
+        <a href="./list.html">
+          <div class="list">
+              <img src="./image/list (1).png" alt="list" height="40px">
+              <span>List</span>
+          </div>
+        </a>
+          <a href="./index.html">
+              <div class="home">
+                  <img src="./image/home.png" alt="home" height="40px">
+                  <span>Home</span>
+              </div>
+          </a>
+          <a href="./setting.html">
+              <div class="setting">
+                  <img src="./image/profile.png" alt="setting" height="40px">
+                  <span>Setting</span>
+              </div>
+          </a>
+          <div class="hidden" style="position: absolute; right : 0; transform:translateX(-100%)">
+              <img src="./image/eye.png" alt="setting" height="25px">
+          </div>
+          <div class="insert" onclick="addToDoList()">
+               <img src="./image/insert.png" alt="inset" height="40px">
+               <span>Insert</span>
+          </div>
+      </nav>
+  
+      <script src="list.js"></script>
+      <script src="index.js"></script>
+</body>
+</html>
